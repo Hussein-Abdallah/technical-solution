@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "id": 1,
+      "name": "Frontend Developers",
+      "users": [1, 3]
+    },
+    {
+      "id": 2,
+      "name": "Backend Developers",
+      "users": [1, 2]
+    },
+    {
+      "id": 3,
+      "name": "Fullstack Developers",
+      "users": [2, 3]
+    }
+  ]
+}

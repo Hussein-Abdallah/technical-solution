@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test1@sample.com",
+      "firstName": "Hussein",
+      "lastName": "Abdallah",
+      "groups": [1, 2]
+    },
+    {
+      "id": 2,
+      "email": "test2@sample.com",
+      "firstName": "Jhon",
+      "lastName": "Doe",
+      "groups": [2, 3]
+    },
+    {
+      "id": 3,
+      "email": "test3@sample.com",
+      "firstName": "Jhon",
+      "lastName": "Smith",
+      "groups": [1, 3]
+    },
+    {
+      "id": 4,
+      "email": "test4@sample.com",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "groups": []
+    },
+    {
+      "id": 5,
+      "email": "test5@email.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "groups": [3]
+    }
+  ]
+}
