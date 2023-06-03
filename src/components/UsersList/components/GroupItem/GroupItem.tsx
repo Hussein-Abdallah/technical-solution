@@ -6,6 +6,8 @@ interface Props {
 
 export function GroupItem({id}: Props) {
   const groupDetails = Groups.groups.find((group) => group.id === id);
-  const groupName = groupDetails ? groupDetails.name : null;
-  return <li>{groupName}</li>;
+
+  if (!groupDetails) return null;
+
+  return <li>{groupDetails.name}</li>;
 }

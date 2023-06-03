@@ -26,7 +26,7 @@
       "email": "test4@sample.com",
       "firstName": "Jane",
       "lastName": "Doe",
-      "groups": []
+      "groups": [1, 7, 2]
     },
     {
       "id": 5,

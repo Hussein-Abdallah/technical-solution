@@ -3,7 +3,7 @@ import {GroupItem} from "./components";
 
 import styles from "./UsersList.module.css";
 
-type User = {
+export type User = {
   id: number;
   firstName: string;
   lastName: string;
