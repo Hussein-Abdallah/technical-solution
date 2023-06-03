@@ -3,13 +3,13 @@ import {UserItem} from "./components";
 
 import styles from "./UsersList.module.css";
 
-export type User = {
+export interface User {
   id: number;
   firstName: string;
   lastName: string;
   email: string;
   groups: number[];
-};
+}
 
 interface Props {
   users: User[];
