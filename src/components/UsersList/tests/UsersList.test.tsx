@@ -1,6 +1,7 @@
 import {mount} from "@shopify/react-testing";
 import {UsersList} from "../UsersList";
 import type {User} from "../UsersList";
+import {UserItem} from "../components";
 
 const mockUser: User[] = [
   {
@@ -25,13 +26,9 @@ describe("UsersList", () => {
     expect(wrapper.find("table")).not.toBeNull();
   });
 
-  it("renders rows for each user", () => {
+  it("renders UserItem for each user", () => {
     const wrapper = mount(<UsersList users={mockUser} />);
 
-    const tbody = wrapper.find("tbody")!;
-    expect(tbody).not.toBeNull();
-
-    const userRows = tbody.findAll("tr");
-    expect(userRows.length).toBe(2);
+    expect(wrapper).toContainReactComponentTimes(UserItem, mockUser.length);
   });
 });

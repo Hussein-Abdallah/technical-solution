@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import {GroupItem} from "./components";
+import {UserItem} from "./components";
 
 import styles from "./UsersList.module.css";
 
@@ -30,17 +30,7 @@ export function UsersList({users}: Props) {
       </thead>
       <tbody>
         {users.map((user) => (
-          <tr key={user.id}>
-            <td>{`${user.firstName} ${user.lastName}`}</td>
-            <td>{user.email}</td>
-            <td>
-              <ul className={styles.GroupList}>
-                {user.groups.map((group) => (
-                  <GroupItem key={group} id={group} />
-                ))}
-              </ul>
-            </td>
-          </tr>
+          <UserItem key={user.id} {...user} />
         ))}
       </tbody>
     </table>

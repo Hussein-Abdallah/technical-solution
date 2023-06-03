@@ -30,8 +30,3 @@
 .Table tr:hover {
   background-color: #ddd;
 }
-
-.GroupList {
-  list-style: square;
-  padding-left: 16px;
-}
